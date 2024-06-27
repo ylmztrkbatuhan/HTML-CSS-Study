@@ -75,6 +75,24 @@
         height: 600px;
 
         /* CSS GRID */
+
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside container; distribute empty space */
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+
+        /* aligning items INSIDE cells: moving items around inside cells */
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: center;
+        justify-self: center;
       }
     </style>
   </head>
